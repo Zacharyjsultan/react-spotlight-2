@@ -11,7 +11,7 @@ export const getCountryNames = (countries) => {
 // REQS: use .map
 
 export const getCountryCodes = (countries) => {
-
+  return countries.map(country => [country.name, country.iso2]);
 };
 
 // INPUT: the array of shoes from data.js
