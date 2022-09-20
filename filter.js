@@ -3,7 +3,7 @@
 // REQS: use .filter
 
 export const filterOceania = (countries) => {
-  return countries.filter(country => country.continent === 'Oceania');
+  return countries.filter(taco => taco.continent === 'Oceania');
 };
 
 // INPUT: the array of countries from data.js
@@ -11,14 +11,14 @@ export const filterOceania = (countries) => {
 // REQS: use .filter
 
 export const filterAu = (countries) => {
-  return countries.filter((country) => country.name.includes('au'));
+  return countries.filter((hamburger) => hamburger.name.includes('au'));
 };
 
 // INPUT: the array of dogs from data.js
 // OUTPUT: only dogs that are 2 years old or younger
 // REQS: use .filter
 export const filterYoungDogs = (dogs) => {
-  return dogs.filter((dog) => dog.age <= 2);
+  return dogs.filter((ketchup) => ketchup.age <= 2);
 
 };
 
@@ -26,5 +26,5 @@ export const filterYoungDogs = (dogs) => {
 // OUTPUT: a list of names of dogs that are 2 years old or younger
 // REQS: use .filter AND .map OR use your filterYoungDogs function and a map
 export const getYoungDogNames = (dogs) => {
-  return filterYoungDogs(dogs).map(dog => dog.name);
+  return filterYoungDogs(dogs).map(yaoMing => yaoMing.name);
 };
