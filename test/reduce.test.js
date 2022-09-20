@@ -1,5 +1,5 @@
 import { getAverageAge, getSneaks } from '../reduce';
-import { brands, countries, dogs } from '../data';
+import { brands, dogs } from '../data';
 
 test('getSneaks returns the list of sneaker brands', () => {
   expect(getSneaks(brands)).toStrictEqual([
@@ -20,6 +20,6 @@ test('getSneaks returns the list of sneaker brands', () => {
   ]);
 });
 
-test.skip('getAverageAge returns the average age of the dogs', () => {
+test('getAverageAge returns the average age of the dogs', () => {
   expect(getAverageAge(dogs)).toEqual(3.2);
 });
